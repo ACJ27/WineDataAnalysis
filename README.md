@@ -2,7 +2,7 @@
 
 
 1. **Find the average chemical composition of wines based on quality levels**:
-   '''sql
+   ```sql
    SELECT quality, 
        ROUND(AVG(alcohol)::NUMERIC, 2) AS avg_alcohol, 
        ROUND(AVG(fixed_acidity)::NUMERIC, 2) AS avg_fixed_acidity, 
@@ -11,4 +11,4 @@
    FROM wine
    GROUP BY quality
    ORDER BY quality DESC;
-   '''
+   ```
