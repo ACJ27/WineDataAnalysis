@@ -1,7 +1,7 @@
 # WineDataAnalysis
 
 
-1. **Find the average chemical composition of wines based on quality levels
+1. **Find the average chemical composition of wines based on quality levels:
    ---sql
    SELECT quality, 
        ROUND(AVG(alcohol)::NUMERIC, 2) AS avg_alcohol, 
